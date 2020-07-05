@@ -1,73 +1,215 @@
-* {
-	padding : 0;
-	margin : 0;
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  font-size: 20px;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.start-pad{
+  padding-top: 2rem;
+}
+
+.intro{
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.padding{
+  padding-bottom: 1rem;
+}
+
+.title{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.subtitle{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.content{
+  width: 60%;
+  margin: 0 auto
+
+  ;
+}
+ 
+.nav-head {
+  font-weight: 800;
+  font-size: 40px;
+  font-variant: small-caps;
+  text-align: center; 
+  opacity: 0.7;
+  text-shadow: 2px 4px 3px rgba(1,1,1,0.8);
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 auto;
+  font-weight: 800;
+  font-variant: small-caps;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+  opacity: 0.7;
+}
+
+a:visited{
+  color: purple;
+}
+
+a:hover{
+  color: #0000CD;
+  transition-duration: 0.2s;
+  text-decoration: none;
 }
 
 h1 {
-	font-weight: 700;
-	font-size: 80px;
-	font-family: 'Spectral', sans-serif;
-	font-variant: small-caps;
+  font-size: 50px;
 }
 
 h3{
-	font-weight: 400;
-	font-size: 25px;
-	text-transform: small-caps;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	font-family: 'Spectral', sans-serif;
+  font-size: 35px;
 }
 
-div.description {
-  padding-top: 60px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-body {
-  font-family: 'Spectral', sans-serif;
-  font-weight: 300;
-  height: 100%;
-  background-color: #1A1A1D;
-  color: #FFFFFF;
-  padding: 10px;
-  margin: 15px 200px;
-}
-
-p {
-	letter-spacing : 0.3px;
-	margin: 10px 30px;
-}
-
-a {
-	background-color: #1A1A1D;
-	color: #3FEEE6;
+h4, h5{
+  color: #2C3539;
 }
 
 hr.short {
   max-width: 150px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  margin-left: 0px;
   border-width: 3px;
   border-color: inherit;
   border-radius: 0px;
+  opacity: 0.7;
 }
 
-ul{
-  margin: 20px;
-  padding: 5px;
+hr.section {
+  max-width: 70%;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  border-width: 2px;
+  border-color: inherit;
+  border-radius: 0px;
+  opacity: 1;
+  color: #2C3539;
+}
+.card{
+  background-color: #A9A9A9;
 }
 
-span.subheading {
-	font-weight: 100;
-	font-size: 35px;
-	font-family: 'Spectral', sans-serif;
+.card-title{
+  opacity: 1.0;
 }
 
-.header-image {
-  float: right;
-  height: 192px;
-  width: 192px;
-  margin-top: -35px;
+/* Table Properties */
+.table-responsive{
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
 }
+
+tr:hover{
+  background-color: #778899;
+  transition-duration: 0.5;
+}
+
+.caption{
+  caption-side: top;
+  text-align: center;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 24px;
+    height: 24px;
+    transition-duration: 0.5s;
+    margin: 10px;
+    background-color: #2B547E;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: #566D7E;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: #566D7E;
+}
+
+
+/* Footer Properties */
+footer{
+  background-color: rgba(12,31,60, 0.7);
+  text-align: center;
+  color: #ddd;
+}
+
+.ending h4{
+  color: white;
+  font-variant: normal;
+  text-align: center;
+}
+
+.icons a{
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.icons a:visited{
+  color: white;
+}
+
+.fa-facebook-official, .fa-envelope, .fa-github{
+  color: #FFFFFF;
+}
+
+.fa-facebook-official:hover, .fa-envelope:hover, .fa-github:hover{
+  color: #2C3539;
+  transition-duration: 0.5s;
