@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://use.fontawesome.com/30185c2d99.js"></script>
 	<link href="mystyle.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" href="style.css">-->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -73,36 +73,39 @@
             <a class="nav-link" href="#courses">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#connect">Connect</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="start-pad"></div>
-
   <!-- Introduction -->
   <div class="container-fluid padding intro">
-  	<div class="row" id="about">
-  		<div class="col-12">
-		    <img src="images/me.png" class="rounded-circle float-right" width="170" height="170" style="margin: 10px;">
-		    <p>Before you proceed, apologies lone traveller, for if you sought my visual appearance in your quest of surfing this page, I am sorry to say but I have no image worthy to be displayed to you, may you feel content with this art instead. Late better than never, Hello! My name is Raj Aryan Agrawal</p>
-			<p> This is my personal webpage created under the Learner's Space conducted by the Web and Coding Club at the institute to pass my time during this corona out<i>break</i>.</p>
+	  	<div class="row intro-inner text-center" id="about">
+	  		<div class="col-12">
+			    <img src="images/me.png" class="rounded-circle" width="40%" style="margin: 10px;">
+			    <h3 class="heading"> Welcome </div>
+			    <p>Before you proceed, apologies lone traveller, for if you sought my visual appearance in your quest of surfing this page, I am sorry to say but I have no image worthy to be displayed to you, may you feel content with this art instead. Late better than never, Hello! My name is Raj Aryan Agrawal</p>
+				<p> This is my personal webpage created under the Learner's Space conducted by the Web and Coding Club at the institute to pass my time during this corona out<i>break</i>.</p>
+			</div>
 		</div>
 	</div>
   </div>
 
-  <div class="container-fluid padding">
+  <div class="container-fluid padding about-me">
   	<div class="row title">
   		<div class="col-12">
-  			<h1> About Me </h1>
-  			<hr class="short">
+  			<h1 class="main-head"> About Me </h1>
+  			<hr class="main-title-sep">
   		</div>
   	</div>
   	<div class="row subtitle">
   		<div class="col-12 padding">
-  			<h3> Education </h3>
+  			<h3 class="sub-head"> Education </h3>
   		</div>
   	</div>
   	<div class="row content">
@@ -117,7 +120,7 @@
 
   	<div class="row subtitle" id="hobbies">
   		<div class="col-12 padding">
-  			<h3> Hobbies </h3>
+  			<h3 class="sub-head"> Hobbies </h3>
   		</div>
   	</div>
   	<div class="row content">
@@ -162,12 +165,20 @@
   			</div>
   		</div>
   	</div>
-  	<hr class="section">
+  </div>
 
+
+  <div class="container-fluid padding academics">
+  	<div class="row title">
+  		<div class="col-12">
+  			<h1 class="main-head"> Academics </h1>
+  			<hr class="main-title-sep">
+  		</div>
+  	</div>
   	<!-- Courses -->
   	<div class="row subtitle" id="courses">
   		<div class="col-12 padding">
-  			<h3> Courses </h3>
+  			<h3 class="sub-head"> Courses </h3>
   		</div>
   	</div>
 
@@ -185,18 +196,18 @@
 	    <div class="carousel-item active">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Computer Science and Engineering </h4>
+	      		<h4 class="dept text-center"> Department of Computer Science and Engineering </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CS 101</th>
 				      <td> Computer Programming and Utilization </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CS 152</th>
 				      <td> Abstractions and Paradigms for Programming </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CS 152</th>
 				      <td> Programming Paradigms Laboratory </td>
 				    </tr>
@@ -209,14 +220,14 @@
 	    <div class="carousel-item">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Mathematics </h4>
+	      		<h4 class="dept text-center"> Department of Mathematics </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">MA 105</th>
 				      <td> Calculus </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">MA 106</th>
 				      <td> Linear Algebra </td>
 				    </tr>
@@ -229,18 +240,18 @@
 	    <div class="carousel-item">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Physics </h4>
+	      		<h4 class="dept text-center"> Department of Physics </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">PH 107</th>
 				      <td> Quantum Physics and Application </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">PH 117 </th>
 				      <td> Physics Lab </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">PH 108 </th>
 				      <td> Basics of Electricity and Magnetism </td>
 				    </tr>
@@ -253,18 +264,18 @@
 	    <div class="carousel-item">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Chemistry </h4>
+	      		<h4 class="dept text-center"> Department of Chemistry </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CH 105</th>
 				      <td> Organic and Inorganic Chemistry </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CH 107 </th>
 				      <td> Physical Chemistry </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">CH 117 </th>
 				      <td> Chemistry Lab </td>
 				    </tr>
@@ -277,10 +288,10 @@
 	    <div class="carousel-item">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Biosciences and Bioengineering </h4>
+	      		<h4 class="dept text-center"> Department of Biosciences and Bioengineering </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">BB 101</th>
 				      <td> Biology </td>
 				    </tr>
@@ -293,14 +304,14 @@
 	    <div class="carousel-item">
 	      <div class="col-12">
 	      	<div class="table-responsive">
-	      		<h4 class="text-center"> Department of Mechanical Engineering </h4>
+	      		<h4 class="dept text-center"> Department of Mechanical Engineering </h4>
 		      	<table class="table table-borderless">
 				  <tbody>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">ME 113</th>
 				      <td> Workshop Practice </td>
 				    </tr>
-				    <tr class="table-active">
+				    <tr>
 				      <th scope="row">ME 119</th>
 				      <td> Engineering Graphics and Drawing </td>
 				    </tr>
@@ -321,24 +332,44 @@
 	</div>
 </div>
 
-<footer class="page-footer font-small" id="contact">
+<div class="container-fluid padding contact-form">
+  <div class="contact-form-inner">
+    <div class="col-12">
+        <h1 class="sub-head">Contact Me</h1>
+      </div>
+    <form action="https://formspree.io/xnqgolkl" method="POST" id="contact">
+      <div class="form-group">
+        <label>Your email:</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto">
+      </div>
+      <div class="form-group">
+        <label>Feel free to give your reviews about my site!</label>
+          <textarea name="message" class="form-control" rows="4" placeholder="Go on, tell me!"></textarea>
+      </div>
+      <button type="submit" class="btn submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<footer class="page-footer font-small" id="connect">
 	<div class="container-fluid start-pad">
 		<div class="row subtitle">
 	  		<div class="col-12">
-	  			<h3> Contact Me </h3>
+	  			<h3 class="sub-head"> Connect </h3>
 	  		</div>
 	  	</div>
 		<div class="row text-center">
 			<div class="col-12 icons">
 		      <a href="https://www.facebook.com/Hajime.Nagumo.1029" target="_blank"><i class="fa fa-facebook-official"></i></a>
-		      <a href="mailto:noname14274@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+		      <!-- <a href="mailto:noname14274@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> -->
 		      <a href="https://github.com/Anon258" target="_blank"><i class="fa fa-github"></i></a>
 		    </div>
 		</div>
 	</div>
 	<div class="row text-center">
 		<div class="col-12 ending">
-	 		<h4>It is sad to see you go away lone traveller!</h4>
+	 		<h4 class="end-message">It is sad to see you go away lone traveller!</h4>
 		</div>
 	</div>
 	<div class="footer-copyright text-center py-3">

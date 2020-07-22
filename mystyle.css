@@ -1,3 +1,10 @@
+/* Colors:
+  beige: #EAE7DC
+  light brown: #D8C3A5
+  light red: #E98074;
+  red: #E85A4F;*/
+
+
 html, body{
   height: 100%;
   width: 100%;
@@ -11,14 +18,54 @@ html {
   scroll-behavior: smooth;
 }
 
-.start-pad{
-  padding-top: 2rem;
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
 }
 
+
+/* Introduction Specs*/
 .intro{
-  width: 60%;
-  text-align: left;
+  background-color: #265077;
+  height:100%;
+  color: #FFFFFF;
+}
+
+.intro-inner{
+  width: 70%;
   margin: 0 auto;
+}
+
+h3.heading{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #265077, #FFFFFF, #265077);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -300%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+/* About Me*/
+.about-me{
+  background-color: #1E4258;
+  color: #D1D7E0;
 }
 
 .padding{
@@ -28,6 +75,7 @@ html {
 .title{
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .subtitle{
@@ -37,9 +85,7 @@ html {
 
 .content{
   width: 60%;
-  margin: 0 auto
-
-  ;
+  margin: 0 auto;
 }
  
 .nav-head {
@@ -59,43 +105,41 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 auto;
   font-weight: 800;
   font-variant: small-caps;
-  text-align: left;
-  line-height: 1.2;
+  text-align: center;
   letter-spacing: 1.3px;
   opacity: 0.7;
 }
 
+a{
+  color: #5CDB95;
+}
+
 a:visited{
-  color: purple;
+  color: #E85A4F;
 }
 
 a:hover{
-  color: #0000CD;
+  color: #E98074;
   transition-duration: 0.2s;
   text-decoration: none;
 }
 
-h1 {
-  font-size: 50px;
+.main-head{
+  font-size: 4em;
 }
 
-h3{
-  font-size: 35px;
+.sub-head{
+  font-size: 2.5em;
 }
 
-h4, h5{
-  color: #2C3539;
-}
-
-hr.short {
-  max-width: 150px;
-  margin-top: 0px;
-  margin-bottom: 1rem;
-  margin-left: 0px;
-  border-width: 3px;
+hr.main-title-sep {
+  max-width:40%;
+  color: #D1D7E0;
+  border-width: 2px;
   border-color: inherit;
   border-radius: 0px;
-  opacity: 0.7;
+  margin-top: 0px;
+  opacity: 1;
 }
 
 hr.section {
@@ -107,14 +151,20 @@ hr.section {
   border-color: inherit;
   border-radius: 0px;
   opacity: 1;
-  color: #2C3539;
+  color: #D1D7E0;
 }
 .card{
-  background-color: #A9A9A9;
+  background-color: #2D5F5D;
 }
 
 .card-title{
   opacity: 1.0;
+}
+
+/*Academics Sec*/
+.academics{
+  background-color: #25274D;
+  color: #FFFFFF;
 }
 
 /* Table Properties */
@@ -127,6 +177,11 @@ hr.section {
 tr:hover{
   background-color: #778899;
   transition-duration: 0.5;
+}
+
+tr{
+  color: #FFFFFF;
+  background-color: #29648A;
 }
 
 .caption{
@@ -148,7 +203,7 @@ tr:hover{
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    background-color: #0000ff;
+    background-color: #29648A;
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
 }
 .carousel-indicators .active {
@@ -156,7 +211,7 @@ tr:hover{
     height: 24px;
     transition-duration: 0.5s;
     margin: 10px;
-    background-color: #2B547E;
+    background-color: #E85A4F;
 }
 
 .carousel-control-prev-icon,
@@ -166,7 +221,8 @@ tr:hover{
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-color: #E98074;
   background-image: none;
 }
 
@@ -174,19 +230,34 @@ tr:hover{
 {
   content: '>';
   font-size: 30px;
-  color: #566D7E;
+  color: #E85A4F;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 30px;
-  color: #566D7E;
+  color: #E85A4F;
+}
+
+/* Contact Form*/
+.contact-form{
+  background-color: #86B3D1;
+}
+
+.contact-form-inner{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.submit-btn{
+  background: #4D6D9A;
 }
 
 
 /* Footer Properties */
 footer{
-  background-color: rgba(12,31,60, 0.7);
+  background-color: #022140;
+  opacity: 0.9;
   text-align: center;
   color: #ddd;
 }
@@ -213,3 +284,182 @@ footer{
 .fa-facebook-official:hover, .fa-envelope:hover, .fa-github:hover{
   color: #2C3539;
   transition-duration: 0.5s;
+}
+
+/* Media Queries*/
+
+  /*Large Display*/
+
+/*Large Display*/
+
+@media (max-width: 1024px) {
+  .nav-head {
+    font-size: 160%;
+  }
+}
+
+/*Medium Display*/
+
+@media (max-width: 768px){
+    .intro-inner{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h3.heading{
+      font-size: 3em;
+    }
+
+    .title{
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .subtitle{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .content{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .nav-head{
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    .nav-item{
+      font-size: 15px;
+    }
+
+    .main-head{
+      font-size: 3.5em;
+    }
+
+    .sub-head{
+      font-size: 2em;
+    }
+
+    hr.main-title-sep {
+      max-width:60%;
+    }
+
+    hr.section {
+      max-width: 60%;
+    }
+
+    .table-responsive{
+      width: 80%;
+      margin: 0 auto;
+      padding: 1rem 0rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+      height: 30px;
+      width: 30px;
+    }
+
+    .carousel-control-prev-icon:after,
+    .carousel-control-next-icon:after{
+      font-size: 20px;
+    }
+
+    .dept{
+      font-size: 120%;
+    }
+
+    .contact-form-inner{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .end-message{
+      font-size: 120%;
+    }
+}
+
+/*Small Display*/
+
+@media (max-width: 576){
+    .intro-inner{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h3.heading{
+      font-size: 2em;
+    }
+
+    .title{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .subtitle{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .content{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .nav-head{
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .nav-item{
+      font-size: 10px;
+    }
+
+    .main-head{
+      font-size: 2.5em;
+    }
+
+    .sub-head{
+      font-size: 1.5em;
+    }
+
+    hr.main-title-sep {
+      max-width:80%;
+    }
+
+    hr.section {
+      max-width: 90%;
+    }
+
+    .table-responsive{
+      width: 95%;
+      margin: 0 auto;
+      padding: 1rem 0rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+      height: 20px;
+      width: 20px;
+    }
+
+    .carousel-control-prev-icon:after,
+    .carousel-control-next-icon:after{
+      font-size: 10px;
+    }
+
+    .dept{
+      font-size: 80%;
+    }
+
+    .contact-form-inner{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .end-message{
+      font-size: 80%;
+    }
+}
